@@ -1,0 +1,502 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat&family=Poppins&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+}
+
+html {
+    scroll-behavior: smooth !important;
+}
+
+.offset::before {
+    display: block;
+    content: "";
+    height: 6rem;
+}
+
+.navbar {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    background-color: white;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: rgba(0, 0, 0, 1.5);
+}
+
+.navbar-toggler {
+    border-color: rgba(255, 255, 255, 0) !important;
+}
+
+button:focus {
+    outline: none;
+}
+
+.navbar-brand {
+    font-family: 'Orbitron', sans-serif;
+}
+
+.navbar-dark .navbar-nav .nav-link.active,
+.navbar-dark .navbar-nav,
+.nav-link:hover {
+    color: #1ebba3 !important;
+}
+
+.opacity-3 {
+    opacity: 0.4 !important;
+}
+
+.navbar-toggler {
+    cursor: pointer;
+    margin-left: 10px;
+    font-size: 15px;
+    outline: none !important;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+.banner {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner-area {
+    padding: 150px 0px;
+}
+
+#about {
+    background-color: gray;
+    color: white;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+/* --------------------- About Start  ------------- */
+
+.my-pic {
+    width: 50%;
+    border-radius: 50%;
+}
+
+#about h2,
+p {
+    font-weight: 400;
+}
+
+/* --------------------- Skills Start  ------------- */
+#skills svg {
+    font-size: 100px;
+}
+
+#skills img {
+    width: 100px;
+    padding: 10px;
+    color: #585050!important;
+}
+
+
+/*-----------Services ---------- */
+
+.hovereffect {
+    width: 100%;
+    height: 100%;
+    float: left;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    cursor: default;
+    background: #0a0e0c;
+}
+
+.hovereffect .overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    padding: 95px 20px;
+}
+
+.hovereffect img {
+    display: block;
+    position: relative;
+    max-width: none;
+    width: calc(100% + 20px);
+    height: inherit;
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+    -webkit-transform: translate3d(-10px, 0, 0);
+    transform: translate3d(-10px, 0, 0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.hovereffect:hover img {
+    opacity: 0.4;
+    filter: alpha(opacity=40);
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+
+.hovereffect h2 {
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    position: relative;
+    font-size: 21px;
+    overflow: hidden;
+    font-weight: 700;
+    visibility: hidden;
+    padding: 0.5em 0;
+    background-color: transparent;
+}
+
+.hovereffect h2:after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #fff;
+    content: '';
+    -webkit-transition: -webkit-transform 0.35s;
+    transition: transform 0.50s;
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+}
+
+.hovereffect a {
+    text-decoration: none;
+}
+
+.hovereffect:hover h2:after {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+
+.hovereffect:hover h2 {
+    visibility: visible !important;
+}
+
+.hovereffect a,
+.hovereffect p {
+    color: #FFF;
+    font-family: 'Raleway', sans-serif;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+}
+
+.hovereffect:hover a,
+.hovereffect:hover p {
+    opacity: 1;
+    filter: alpha(opacity=100);
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+
+/* ------- Contact ----------- */
+
+.form-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form_flex {
+    display: flex;
+    gap: 15px;
+}
+
+/*-----------Footer ---------- */
+
+.footer-basic {
+    padding: 40px 0;
+    background-color: gray;
+    color: white;
+    width: 100%;
+    max-width: 100%;
+    margin-top: 90px;
+}
+
+.footer-basic ul {
+    padding: 0;
+    list-style: none;
+    text-align: center;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 0;
+}
+
+.footer-basic li {
+    padding: 0 10px;
+}
+
+.footer-basic ul a {
+    color: inherit;
+    text-decoration: none;
+    opacity: 0.8;
+}
+
+.footer-basic ul a:hover {
+    opacity: 1;
+}
+
+.footer-basic .social {
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+.footer-basic .social>a {
+    font-size: 24px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    border: 1px solid #ccc;
+    margin: 0 8px;
+    color: inherit;
+    opacity: 0.75;
+}
+
+.footer-basic .social>a:hover {
+    opacity: 0.9;
+}
+
+.footer-basic .copyright {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 13px;
+    color: #fff;
+    opacity: 0.9;
+    margin-bottom: 0;
+}
+
+/*------- Media Queries-------*/
+
+@media screen and (max-width: 1024px) {
+    /*-----tablets-----*/
+
+    #about .p-5 {
+        padding: 0rem !important;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    /*-----tablets-----*/
+    .navbar {
+        background-color: white;
+    }
+
+    .my-pic {
+        width: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+    }
+
+    #about p {
+        width: 327px;
+        display: flex;
+        padding: 13px 0px;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+    }
+
+    #about .p-5 {
+        padding: 0rem !important;
+    }
+
+    #about h2 {
+        text-align: center;
+    }
+
+    .hovereffect .overlay {
+        padding: 44px 20px;
+    }
+
+    .form_flex {
+        flex-direction: column;
+    }
+
+    .ant-input {
+        width: 100%;
+    }
+
+    .text-mobile-center {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 609px) {
+    /*-----smartphones-----*/
+
+    #contact .post-heading h3 {
+        font-size: 2em;
+    }
+
+    #about .post-heading h3 {
+        font-size: 2em;
+    }
+
+    .my-pic {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+    }
+
+    #about p {
+        width: 299px;
+        display: flex;
+        padding: 17px 18px 16px 18px;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+    }
+
+    #about h2 {
+        text-align: center;
+    }
+
+    #service .post-heading h3 {
+        font-size: 2em;
+    }
+
+    .sec1 h2 {
+        font-size: 1.5em;
+    }
+
+    .hovereffect .overlay {
+        padding: 44px 20px;
+    }
+
+
+}
+
+@media screen and (max-width: 479px) {
+    /*-----smartphones-----*/
+
+    .my-pic {
+        width: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+    }
+
+    #about h2 {
+        font-size: 1.5em;
+        text-align: center;
+    }
+
+    #about p {
+        width: 299px;
+        display: flex;
+        padding: 17px 18px 16px 18px;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+    }
+
+    #contact .post-heading h3 {
+        font-size: 2em;
+    }
+
+    #about .post-heading h3 {
+        font-size: 2em;
+    }
+
+    .hovereffect .overlay {
+        padding: 44px 20px;
+    }
+
+    .footer-basic ul {
+        gap: 10px;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    /*-----smartphones-----*/
+
+    .my-pic {
+        width: 50%;
+        display: flex;
+        padding: 17px 0px 14px 0px;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+    }
+
+    #contact .post-heading h3 {
+        font-size: 2em;
+    }
+
+    #about .post-heading h3 {
+        font-size: 1.5em;
+    }
+
+    #about h2 {
+        font-size: 1.5em;
+        text-align: center;
+    }
+
+    #about p {
+        width: 267px;
+        display: flex;
+        padding: 17px 18px 16px 18px;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+    }
+
+    #service .post-heading h3 {
+        font-size: 1.5em;
+    }
+
+    .sec1 h2 {
+        font-size: 1.5em;
+    }
+
+    .offset::before {
+        display: block;
+        content: "";
+        height: 4rem;
+    }
+
+    .hovereffect .overlay {
+        padding: 44px 20px;
+    }
+
+    .hovereffect h2 {
+        font-size: 15px;
+    }
+}
