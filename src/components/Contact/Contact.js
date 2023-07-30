@@ -7,7 +7,7 @@ const Contact = () => {
   const [form] = useForm();
   const onFinish = async (values) => {
     const formData = new FormData();
-    formData.append("access_key", "af24730a-3dcb-48e8-ae0b-f19cd81fb028");
+    formData.append("access_key", process.env.REACT_APP_WEB3FORM_PUBLIC_KEY);
     formData.append("name", values.name);
     formData.append("email", values.email);
     formData.append("comment", values.comment);

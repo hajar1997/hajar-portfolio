@@ -37,10 +37,10 @@ const Skills = () => {
             <img src="images/nextjs-original.svg" />
             <p>Next js</p>
           </div>
-          <div className="col-lg-4 col-md-6 mt-5" data-aos="fade-up">
+          {/* <div className="col-lg-4 col-md-6 mt-5" data-aos="fade-up">
             <img src="images/typescript-original.svg" />
             <p>Typescript</p>
-          </div>
+          </div> */}
           <div className="col-lg-4 col-md-6 mt-5" data-aos="fade-up">
             <img src="images/redux-original.svg" />
             <p>Redux</p>

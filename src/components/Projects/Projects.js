@@ -61,6 +61,17 @@ const Projects = () => {
         </div>
         <div className="col-md-6 col-12 pb-5" data-aos="fade-up">
           <div className="hovereffect">
+            <img className src="images/124352.png" alt />
+            <div className="overlay">
+              <h2>Car Advertising Template</h2>
+              <p>
+                <a href="https://turbo-car.netlify.app/">Live Preview</a>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div className="col-md-6 col-12 pb-5" data-aos="fade-up">
+          <div className="hovereffect">
             <img className src="images/blog.png" alt />
             <div className="overlay">
               <h2>Blog Template</h2>
